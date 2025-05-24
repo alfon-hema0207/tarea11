@@ -1,0 +1,49 @@
+/* RESET BASADO EN EL HTML PROPORCIONADO */
+
+html, body, header, nav, ul, li, a, h1, h2, h3, h4, p,
+div, table, thead, tbody, tr, th, td, img, em, br, span, hr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* Establecer comportamiento básico */
+body {
+  line-height: 1;
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Listas sin viñetas */
+ul {
+  list-style: none;
+}
+
+/* Quitar estilos de enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Imágenes responsivas por defecto */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tablas sin espacio entre celdas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Elementos block */
+header, nav, div, section, aside, table {
+  display: block;
+}

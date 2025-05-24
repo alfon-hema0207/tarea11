@@ -1,0 +1,243 @@
+/* main.css */
+
+/* Layout base */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000;
+  background: #f7f7f7;
+}
+
+#box {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cabecera */
+header {
+  background-color: #2991cc;
+  color: #fff;
+  padding: 0.8em 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1em;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Columna izquierda */
+#railLeft {
+  width: 18em;
+  padding: 1em;
+  background: #eee;
+  box-sizing: border-box;
+}
+
+.alertLeft {
+  font-size: 0.9em;
+  background: #f5efd6;
+  padding: 0.8em;
+  margin-bottom: 1.5em;
+  border-radius: 4px;
+}
+
+.alertLeft a {
+  color: #2991cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.great {
+  background: white;
+  padding: 1em;
+  margin-bottom: 1.5em;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+.great h3 {
+  font-size: 1.1em;
+  margin-bottom: 0.8em;
+}
+
+.great ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.great li {
+  margin-bottom: 0.8em;
+  overflow: hidden;
+}
+
+.blockIcon {
+  float: left;
+  margin-right: 0.5em;
+}
+
+#recentMessageList p {
+  display: block;
+  font-size: 0.85em;
+}
+
+/* Contenido central */
+#middle {
+  flex: 1;
+  padding: 2em;
+  background: white;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  margin: 1em;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.breadcrumb {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+h3 {
+    background-color: #98d1f2;
+    padding: 10px;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+/* Información flotante: empresa y cliente */
+#company, #clientInfo {
+  width: 48%;
+  float: left;
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+
+#clientInfo {
+  float: right;
+  text-align: right;
+}
+
+hr {
+  clear: both;
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 2em 0;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.5em;
+  border-bottom: 1px solid #ccc;
+  vertical-align: top;
+}
+
+th {
+  text-align: left;
+  background: #f0f0f0;
+}
+
+td img {
+  width: auto;
+  max-height: 100px;
+  height: auto;
+}
+
+/* Botón */
+.SendButton {
+  display: inline-block;
+  margin-top: 1.5em;
+  background-color: #2991cc;
+  color: white;
+  padding: 0.6em 1em;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* Columna derecha */
+aside {
+  width: 18em;
+  padding: 1em;
+  background: #eee;
+  box-sizing: border-box;
+}
+
+#chList li, #sellList li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8em;
+}
+
+.chNumber {
+  font-size: 2em;
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+
+.boxBook {
+  width: 60px;
+  height: auto;
+  margin-right: 0.5em;
+}
+
+.bookTitle {
+  font-size: 0.85em;
+}
+
+.bookTitle a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 960px) {
+  #box {
+    flex-direction: column;
+  }
+
+  #railLeft, aside {
+    width: 100%;
+  }
+
+  #company, #clientInfo {
+    float: none;
+    width: 100%;
+    text-align: left;
+  }
+
+  #clientInfo {
+    text-align: left;
+    margin-top: 1em;
+  }
+}
+
